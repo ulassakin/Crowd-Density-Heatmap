@@ -22,3 +22,30 @@ git clone https://github.com/ulassakin/crowd-density-heatmap.git
 cd crowd-density-heatmap
 pip install -r requirements.txt
 ```
+## 🚀 Usage
+
+### Video Input
+```bash
+python heatmap.py \
+  --engine models/edgeyolo.engine \
+  --video data/crowd.mp4 \
+  --save results/output_detection.mp4
+```
+
+### Arguments
+| Argument            | Description |
+|---------------------|-------------|
+| `--engine`          | Path to TensorRT `.engine` file (required) |
+| `--meta`            | Path to sidecar JSON with metadata (auto-detected if empty) |
+| `--video`           | Input video path (required) |
+| `--width`           | Target width (default 1280) |
+| `--height`          | Target height (default 720) |
+| `--fps`             | Target FPS if input missing metadata |
+| `--conf-thres`      | Confidence threshold (default 0.30) |
+| `--iou-thres`       | IoU threshold for NMS (default 0.50) |
+| `--nms-mode`        | `agnostic` or `aware` |
+| `--save`            | Output video filename |
+| `--density-metric`  | Density calculation: `max` or `mean` |
+| `--sigma`           | Gaussian blur sigma for heatmap |
+
+---
