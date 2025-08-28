@@ -27,7 +27,8 @@ pip install -r requirements.txt
 This project uses **EdgeYOLO** as the detection backbone.  
 
 - The pre-trained **ONNX model** is available in the **[Releases](../../releases)** section of this repository.  
-- To run inference with TensorRT, you must first **convert the ONNX model to a TensorRT `.engine` file**.  
+- To run inference with TensorRT, you must first **convert the ONNX model to a TensorRT `.engine` file**.
+- Place the converted `.engine` file inside the `models/` directory of this repository.
 - Example conversion (with TensorRT `trtexec`):  
 
 ```bash
