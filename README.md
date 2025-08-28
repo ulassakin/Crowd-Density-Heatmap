@@ -7,6 +7,14 @@ The script processes video input, detects people, generates a dynamic heatmap ov
 
 ## 📊 Example Output
 
+The output video includes both detection and analysis overlays:
+
+- **Bounding boxes**: Detected people with confidence scores  
+- **Heatmap**: Density visualization with Gaussian blur  
+- **Count**: Total number of people detected in the frame  
+- **Density**: Crowd density score (either `max` or `mean`)  
+- **Graph (bottom)**: Real-time people count trend across frames  
+
 ![Demo](results/demo.gif)
 ![Demo](results/demo1.gif)
 ---
