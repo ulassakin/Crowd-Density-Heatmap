@@ -75,3 +75,12 @@ python heatmap.py \
 | `--sigma`           | Gaussian blur sigma for heatmap |
 
 ---
+## 🌍 Real-World Applications
+
+This tool can be applied in several impactful domains:
+
+- **Public Safety & Crowd Management**: Monitor density in concerts, festivals, or stadiums to prevent overcrowding accidents.  
+- **Smart Surveillance**: Metro, mall, or CCTV operators can track real-time crowding and trigger alerts when density is unsafe.  
+- **Urban Planning & Smart Cities**: Analyze pedestrian flow from cameras or drones to improve infrastructure and traffic safety.  
+- **Retail & Events**: Understand customer hot spots in malls, expos, or supermarkets for better planning and layout optimization.  
+
