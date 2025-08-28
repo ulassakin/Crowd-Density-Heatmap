@@ -22,6 +22,18 @@ git clone https://github.com/ulassakin/crowd-density-heatmap.git
 cd crowd-density-heatmap
 pip install -r requirements.txt
 ```
+## 🧩 Model Weights
+
+This project uses **EdgeYOLO** as the detection backbone.  
+
+- The pre-trained **ONNX model** is available in the **[Releases](../../releases)** section of this repository.  
+- To run inference with TensorRT, you must first **convert the ONNX model to a TensorRT `.engine` file**.  
+- Example conversion (with TensorRT `trtexec`):  
+
+```bash
+trtexec --onnx=edgeyolo.onnx --saveEngine=edgeyolo.engine --fp16
+```
+
 ## 🚀 Usage
 
 ### Video Input
