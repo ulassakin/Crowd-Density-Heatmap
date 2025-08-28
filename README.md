@@ -3,7 +3,12 @@
 A Python-based tool that combines **object detection** (via TensorRT YOLO engine) with **density heatmap visualization** for crowded scenes.  
 The script processes video input, detects people, generates a dynamic heatmap overlay, and tracks **people counts and density metrics over time**.
 
+---
 
+## 📊 Example Output
+
+![Demo](results/demo.gif)
+![Demo](results/demo1.gif)
 ---
 
 ## ✨ Features
